@@ -22,7 +22,7 @@
 	} finally {
 		QueryBean.closeConnection();
 	}
-
+	
 	out.println("{");
 	out.println("\"datas\":[");
 
