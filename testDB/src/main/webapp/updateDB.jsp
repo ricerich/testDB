@@ -19,7 +19,9 @@
 	
 	int result = QueryBean.updateUserInfo(user_id, user_name, user_phone, user_grade);
 	
+	out.println("[");
 	out.println("{");
 	out.println(" 		\"RESULT_OK\":\""+ result +"\" ");
 	out.println("}");
+	out.println("]");
 %>

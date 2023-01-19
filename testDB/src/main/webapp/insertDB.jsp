@@ -20,7 +20,9 @@
 	//int result = QueryBean.insertUserInfo("ggc1", "강감찬", "010-1234-5678", 3);
 	int result = QueryBean.insertUserInfo(user_id, user_name, user_phone, user_grade);
 	
+	out.println("[");
 	out.println("{");
 	out.println(" 		\"RESULT_OK\":\""+ result +"\" ");
 	out.println("}");
+	out.println("]");
 %>

@@ -16,7 +16,9 @@
 	
 	int result = QueryBean.deleteUserInfo(user_id);
 	
+	out.println("[");
 	out.println("{");
 	out.println(" 		\"RESULT_OK\":\""+ result +"\" ");
 	out.println("}");
+	out.println("]");
 %>
