@@ -12,7 +12,7 @@
 	
 	QueryBean.getConnection();
 	
-	String user_id = request.getParameter("user_id") == null ? "hkd" :  request.getParameter("user_id");
+	String user_id = request.getParameter("user_id") == null ? "hkd1111" :  request.getParameter("user_id");
  	String user_name = request.getParameter("user_name")  == null ? "1" :  request.getParameter("user_name");
  	String user_phone = request.getParameter("user_phone")  == null ? "2" :  request.getParameter("user_phone");
  	String user_grade = request.getParameter("user_grade")  == null ? "3" :  request.getParameter("user_grade");

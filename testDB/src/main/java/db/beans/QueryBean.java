@@ -56,15 +56,20 @@ public class QueryBean {
 		}
 	}
 
-	public ArrayList getUserInfo() throws Exception {
+	public ArrayList getUserInfo(String userID) throws Exception {
+		
 		StringBuffer sb = new StringBuffer();
 
 		sb.append(" SELECT ");
 		sb.append("     U_ID, U_NAME, U_PHONE, U_GRADE, WRITE_TIME ");
 		sb.append(" FROM ");
 		sb.append("     USER_INFO_SAMPLE ");
+		sb.append(" WHERE");
+		sb.append("     U_ID LIKE '%"+userID+"%' ");		
 		sb.append(" ORDER BY ");
 		sb.append("     WRITE_TIME ");
+		
+		System.out.println(sb.toString());
 
 		rs = stmt.executeQuery(sb.toString());
 
@@ -78,7 +83,6 @@ public class QueryBean {
 			res.add(rs.getString(5));
 
 		}
-		System.out.println(sb.toString());
 		return res;
 	}
 

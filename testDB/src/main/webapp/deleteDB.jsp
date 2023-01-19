@@ -12,7 +12,7 @@
 	
 	QueryBean.getConnection();
 	
-	String user_id = request.getParameter("user_id") == null ? "hkd" :  request.getParameter("user_id");
+	String user_id = request.getParameter("user_id") == null ? "ccccc" :  request.getParameter("user_id");
 	
 	int result = QueryBean.deleteUserInfo(user_id);
 	
